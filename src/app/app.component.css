@@ -1,0 +1,12 @@
+.content {
+  display: flex;
+  height: calc(100vh - 64px);
+}
+
+app-product-list {
+  flex: 2;
+}
+
+app-display-section, app-number-pad {
+  flex: 1;
+}

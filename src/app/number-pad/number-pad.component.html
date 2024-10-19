@@ -1,0 +1,7 @@
+<div class="number-pad">
+  <button mat-raised-button *ngFor="let number of numbers; let i = index" 
+          (click)="onNumberClick(number)" 
+          [style.background-color]="buttonColors[i]">
+    {{number}}
+  </button>
+</div>

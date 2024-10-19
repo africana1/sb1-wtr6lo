@@ -1,0 +1,12 @@
+<div class="product-list-container">
+  <mat-form-field class="search-field">
+    <input matInput placeholder="Search products" [(ngModel)]="searchTerm" (ngModelChange)="filterProducts()">
+  </mat-form-field>
+  <mat-list>
+    <h3 mat-subheader>Products</h3>
+    <mat-list-item *ngFor="let product of filteredProducts" (click)="selectProduct(product)">
+      <span matListItemTitle>{{product.name}}</span>
+      <span matListItemLine>{{product.price | currency}}</span>
+    </mat-list-item>
+  </mat-list>
+</div>

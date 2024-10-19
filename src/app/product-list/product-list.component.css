@@ -1,0 +1,14 @@
+.product-list-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-field {
+  margin: 16px;
+}
+
+mat-list {
+  flex-grow: 1;
+  overflow-y: auto;
+}
